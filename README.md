@@ -22,7 +22,8 @@ bash scripts/pretrain.sh base 64
 ```
 
 3. Finetuning (Sup_con Loss + CLS Loss)
-Before run, you need to check 'pretrained_model_path' on shell script
+
+* Note that you need to check 'pretrained_model_path' on shell script
 ```console
 cd finetune
 bash scripts/finetune_HWU64_5shot.sh base 16
