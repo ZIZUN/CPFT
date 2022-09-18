@@ -18,13 +18,19 @@ pip install -r ./pretrain/requirements.txt
 3. Pretraining (MLM Loss + Unsup_con Loss)
 ```console
 cd pretrain
-bash scripts/
+bash scripts/pretrain.sh base 64
 ```
 
 3. Finetuning (Sup_con Loss + CLS Loss)
+Before run, you need to check 'pretrained_model_path' on shell script
 ```console
 cd finetune
-bash scripts/
+bash scripts/finetune_HWU64_5shot.sh base 16
+bash scripts/finetune_HWU64_10shot.sh base 16
+bash scripts/finetune_CLINC150_10shot.sh base 16
+bash scripts/finetune_CLINC150_10shot.sh base 16
+bash scripts/finetune_BANKING77_10shot.sh base 16
+bash scripts/finetune_BANKING77_10shot.sh base 16
 ```
 
 ## References
